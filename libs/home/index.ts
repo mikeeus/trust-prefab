@@ -1,1 +1,1 @@
-export { Home } from './src/home';
+export { HomeModule } from './src/home.module';

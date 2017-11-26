@@ -10,13 +10,13 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@trust-prefab/*": [
+      "@trust/*": [
         "libs/*"
       ]
     }
   },
   "files": [
-    "test.js"
+    "test.ts"
   ],
   "include": [
     "**/*.spec.ts",

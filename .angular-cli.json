@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "trust-prefab"
+    "name": "trust"
   },
   "apps": [
     {
@@ -32,6 +32,18 @@
     {
       "name": "catalog",
       "root": "libs/catalog/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "catalog",
+      "root": "libs/catalog/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "home",
+      "root": "libs/home/src",
       "test": "../../../test.js",
       "appRoot": ""
     },
