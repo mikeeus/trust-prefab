@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+@include mat-core();
+// pallets
+$trust-primary: mat-palette($mat-indigo, 700, 300, 900);
+$trust-accent: mat-palette($mat-light-blue);
+$trust-warn: mat-palette($mat-deep-orange, A200);
+// theme
+$trust-theme: mat-light-theme(
+    $trust-primary,
+    $trust-accent,
+    $trust-warn
+);
+@include angular-material-theme($trust-theme);
+// typography
+$custom-typography: mat-typography-config(
+  $font-family: 'Open Sans, sans-serif',
+  $headline: mat-typography-level(32px, 48px, 600),
+  $body-1: mat-typography-level(16px, 24px, 400)
+);
+@include mat-core($custom-typography);
+
+@import './_stylesheets/fonts.scss';

@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'catalog',
-    loadChildren: '@trust/catalog/src/catalog#CatalogModule',
+    loadChildren: '@trust/catalog/src/catalog.module#CatalogModule',
     data: { page: 'catalog' }
   },
   { path: '**', redirectTo: '', pathMatch: 'full' }
