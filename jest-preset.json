@@ -1,0 +1,31 @@
+{
+  "globals": {
+    "ts-jest": {
+      "tsConfigFile": "tsconfig.spec.json"
+    },
+    "__TRANSFORM_HTML__": true
+  },
+  "transform": {
+    "^.+\\.(ts|js|html)$": "<rootDir>/node_modules/jest-preset-angular/preprocessor.js"
+  },
+  "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$",
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "html",
+    "json"
+  ],
+  "mapCoverage": true,
+  "moduleNameMapper": {
+    "^apps/(.*)": "<rootDir>/apps/$1",
+    "^@spotini/(.*)": "<rootDir>/libs/$1",
+    "^src/(.*)": "<rootDir>/apps/spotini/src/$1",
+    "^app/(.*)": "<rootDir>/apps/spotini/src/app/$1",
+    "^assets/(.*)": "<rootDir>/apps/spotini/src/assets/$1",
+    "^environments/(.*)": "<rootDir>/apps/spotini/src/environments/$1"
+  },
+  "testEnvironment": "jest-preset-angular/testEnvironment.js",
+  "transformIgnorePatterns": [
+    "node_modules/(?!@ngrx)"
+  ]
+}
