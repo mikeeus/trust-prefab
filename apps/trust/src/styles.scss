@@ -22,4 +22,16 @@ $custom-typography: mat-typography-config(
 );
 @include mat-core($custom-typography);
 
+// Other stylesheets
+@import 'variables.scss';
 @import './_stylesheets/fonts.scss';
+
+// Global Styles
+html, body{
+  margin: 0;
+  height: 100%;
+  color: $grey8;
+  font-weight: 400;
+  // background: $background;
+  overflow-x: hidden;
+}

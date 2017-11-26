@@ -4,16 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent }
-];
+const routes: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FlexLayoutModule,
-    RouterModule.forChild(routes)
-  ],
+  imports: [CommonModule, FlexLayoutModule, RouterModule.forChild(routes)],
   declarations: [HomeComponent]
 })
 export class HomeModule {}

@@ -1,3 +1,19 @@
-<p>
-  catalog works!
-</p>
+<mat-sidenav-container class="container" fxFill>
+  <mat-sidenav #sidenav class="sidenav">
+    Catalog filters
+  </mat-sidenav>
+
+  <div class="content" fxFill>
+    <button type="button" mat-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile>1</mat-grid-tile>
+      <mat-grid-tile>2</mat-grid-tile>
+      <mat-grid-tile>3</mat-grid-tile>
+      <mat-grid-tile>4</mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+</mat-sidenav-container>
