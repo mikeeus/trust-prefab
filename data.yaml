@@ -1,0 +1,404 @@
+[
+  {
+    name: "KEMER",
+    images: { main: 'KEMER.jpg', sub: 'KEMER_sub.jpg', plan: 'KEMER_plan.jpg' },
+    area: 40,
+    model: "VP 511",
+    short_desc: "35 + 5 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "A  garden  where  your  children  are  raised  and  your flowers  are grown is priceless."
+  },
+  {
+    name: "ALANYA",
+    images: { main: 'ALANYA.jpg', sub: 'ALANYA_sub.jpg', plan: 'ALANYA_plan.jpg' },
+    area: 45,
+    model: "VP 512",
+    short_desc: "40 + 5 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Enjoy the moment when our professional team assembles your building in quick and complete way."
+  },
+  {
+    name: "SİDE",
+    images: { main: 'SİDE.jpg', sub: 'SİDE_sub.jpg', plan: 'SİDE_plan.jpg' },
+    area: 49,
+    model: "VP 513",
+    short_desc: "49 m2 tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Live where you want to be; For example, in a garden decorated with wildflowers."
+  },
+  {
+    name: "BELEK",
+    images: { main: 'BELEK.jpg', sub: 'BELEK_sub.jpg', plan: 'BELEK_plan.jpg' },
+    area: 49,
+    model: "VP 514",
+    short_desc: "42 + 7 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Living is to share the best moments with your beloved ones under a peaceful roof"
+  },
+  {
+    name: "MARMARİS",
+    images: { main: 'MARMARİS.jpg', sub: 'MARMARİS_sub.jpg', plan: 'MARMARİS_plan.jpg' },
+    area: 53,
+    model: "VP 515",
+    short_desc: "47 + 6  m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Starting a new day with the smell of spring flowers... It is what quality live is all about."
+  },
+  {
+    name: "BODRUM",
+    images: { main: 'BODRUM.jpg', sub: 'BODRUM_sub.jpg', plan: 'BODRUM_plan.jpg' },
+    area: 62,
+    model: "VP 516",
+    short_desc: "55 + 7 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Life is the sum of a home surrounding you and the moments you enjoy in your lifetime."
+  },
+  {
+    name: "FETHİYE",
+    images: { main: 'FETHİYE.jpg', sub: 'FETHİYE_sub.jpg', plan: 'FETHİYE_plan.jpg' },
+    area: 68,
+    model: "VP 517",
+    short_desc: "61 + 7 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "We took inspiration from nature’s beauties and designed every detail of your home considering your wishes."
+  },
+  {
+    name: "KUŞADASI",
+    images: { main: 'KUŞADASI.jpg', sub: 'KUŞADASI_sub.jpg', plan: 'KUŞADASI_plan.jpg' },
+    area: 73,
+    model: "VP 518",
+    short_desc: "73 m2 tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Life’s biggest prize is waking up to a brand new morning in a place you dream of."
+  },
+  {
+    name: "DİDİM",
+    images: { main: 'DİDİM.jpg', sub: 'DİDİM_sub.jpg', plan: 'DİDİM_plan.jpg' },
+    area: 72,
+    model: "VP 538",
+    short_desc: "68 + 4 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Every  square  of  it  is  designed  for  your  needs  and  hobbies. Therefore, only thing you need is to experience this privilege"
+  },
+  {
+    name: "ASSOS",
+    images: { main: 'ASSOS.jpg', sub: 'ASSOS_sub.jpg', plan: 'ASSOS_plan.jpg' },
+    area: 75,
+    model: "VP 519",
+    short_desc: "75 m2 tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Stay away from crowds, live your own nature and happiness."
+    },
+  {
+    name: "AYVALIK",
+    images: { main: 'AYVALIK.jpg', sub: 'AYVALIK_sub.jpg', plan: 'AYVALIK_plan.jpg' },
+    area: 77,
+    model: "VP 520",
+    short_desc: "69 + 8 m2 tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Things  that  make  home  a  home  are  beautiful  feelings  and unforgettable moments."
+  },
+  {
+    name: "BERGAMA",
+    images: { main: 'BERGAMA.jpg', sub: 'BERGAMA_sub.jpg', plan: 'BERGAMA_plan.jpg' },
+    area: 78,
+    model: "VP 521",
+    short_desc: "70 + 8 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Every  moment  is  special.  Therefore,  do  not  hesitate  to  touch upon  beauties  and  reward  yourself  and  your  beloved  ones  a beautiful life."
+  },
+  {
+    name: "EDREMİT",
+    images: { main: 'EDREMİT.jpg', sub: 'EDREMİT_sub.jpg', plan: 'EDREMİT_plan.jpg' },
+    area: 81,
+    model: "VP 522",
+    short_desc: "70 + 11 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Energy and happiness surrounding you start once you get your home. Beautiful moments you share are not forgot but live for years."
+  },
+  {
+    name: "GÖREME",
+    images: { main: 'GÖREME.jpg', sub: 'GÖREME_sub.jpg', plan: 'GÖREME_plan.jpg' },
+    area: 82,
+    model: "VP 523",
+    short_desc: "79 + 3 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Feeling  where  you  belong,  a  living  space  reflecting  on  you completely...This is what freedom is."
+  },
+  {
+    name: "KAPADOKYA",
+    images: { main: "KAPADOKYA.jpg", sub: "KAPADOKYA_sub.jpg", plan: "KAPADOKYA_plan.jpg" },
+    area: 84,
+    model: "VP 524",
+    short_desc: "70 + 14 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "We  took  inspiration  from  life  when  we  designed  your  home. Details inside from life and city’s dynamism which can be seen only by epicures aroused on our lines."
+    },
+  {
+    name: "KÜÇÜKYALI",
+    images: { main: "KÜÇÜKYALI.jpg", sub: "KÜÇÜKYALI_sub.jpg", plan: "KÜÇÜKYALI_plan.jpg" },
+    area: 86,
+    model: "VP 525",
+    short_desc: "86 m2 tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "We build environmentally friendly homes; because we know that
+  what we give to nature will be taken back."
+  },
+  {
+    name: "MANAVGAT",
+    images: { main: 'MANAVGAT.jpg', sub: 'MANAVGAT_sub.jpg', plan: 'MANAVGAT_plan.jpg' },
+    area: 93,
+    model: "VP 526",
+    short_desc: "83 + 10 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Live  everyday  like  going  on  a  relaxing,  exciting  journey  in  the heart of nature."
+  },
+  {
+    name: "OLİMPOS",
+    images: { main: 'OLİMPOS.jpg', sub: 'OLİMPOS_sub.jpg', plan: 'OLİMPOS_plan.jpg' },
+    area: 96,
+    model: "VP 527",
+    short_desc: "89 + 7 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Like painted by a surreal, escapist painter... Colourful, vivacious and comfortable..."
+  },
+  {
+    name: "ABANT",
+    images: { main: 'ABANT.jpg', sub: 'ABANT_sub.jpg', plan: 'ABANT_plan.jpg' },
+    area: 98,
+    model: "VP 528",
+    short_desc: "94 + 4 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Was  it  a tiresome  day?  Extend  your feet,  let  your  self  into the arms of your home and start living again."
+  },
+  {
+    name: "ÜRGÜP",
+    images: { main: 'ÜRGÜP.jpg', sub: 'ÜRGÜP_sub.jpg', plan: 'ÜRGÜP_plan.jpg' },
+    area: 110,
+    model: "VP 529",
+    short_desc: "108 + 2 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Moments  you  enjoy  mostly  are  the  ones  that  you  share  your home with your beloved."
+  },
+  {
+    name: "ASPENDOS",
+    images: { main: 'ASPENDOS.jpg', sub: 'ASPENDOS_sub.jpg', plan: 'ASPENDOS_plan.jpg' },
+    area: 113,
+    model: "VP 530",
+    short_desc: "108 + 5 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Everything is set to step new beauties and everything is like in your dreams."
+  },
+  {
+    name: "DATÇA",
+    images: { main: 'DATÇA.jpg', sub: 'DATÇA_sub.jpg', plan: 'DATÇA_plan.jpg' },
+    area: 117,
+    model: "VP 531",
+    short_desc: "104 + 13 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "There are some things that have not lost their meanings yet... So, we keep them alive at your home with love."
+  },
+  {
+    name: "ÇEŞME",
+    images: { main: 'ÇEŞME.jpg', sub: 'ÇEŞME_sub.jpg', plan: 'ÇEŞME_plan.jpg' },
+    area: 121,
+    model: "VP 534",
+    short_desc: "113 + 8 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Bells’  laughs  surround  your  living  space  like  an  impressive melody. Being mesmerized has not been that beautiful before."
+  },
+  {
+    name: "SAKLIKENT",
+    images: { main: "SAKLIKENT.jpg", sub: "SAKLIKENT_sub.jpg", plan: "SAKLIKENT_plan.jpg" },
+    area: 122,
+    model: "VP 532",
+    short_desc: "111 + 11 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Happiness and beautiful moments are not to be delayed. Because future for your beloved ones starts from today."
+  },
+  {
+    name: "KARTALKAYA",
+    images: { main: "KARTALKAYA.jpg", sub: "KARTALKAYA_sub.jpg", plan: "KARTALKAYA_plan.jpg" },
+    area: 123,
+    model: "VP 533",
+    short_desc: "109 + 14 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Every single house that gives a privilege on your live was designed by professionals."
+  },
+  {
+    name: "ALAÇATI",
+    images: { main: 'ALAÇATI.jpg', sub: 'ALAÇATI_sub.jpg', plan: 'ALAÇATI_plan.jpg' },
+    area: 126,
+    model: "VP 535",
+    short_desc: "113 + 13 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "Beauty is in the eye of the beholder. It is time to live your dreams in the houses suitable to everyone’s taste."
+  },
+  {
+    name: "AVŞA",
+    images: { main: 'AVŞA.jpg', sub: 'AVŞA_sub.jpg', plan: 'AVŞA_plan.jpg' },
+    area: 129,
+    model: "VP 536",
+    short_desc: "129 m2 tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "What is more valuable than raising your child in a life with full of love and trust?"
+  },
+  {
+    name: "BOZCAADA",
+    images: { main: 'BOZCAADA.jpg', sub: 'BOZCAADA_sub.jpg', plan: 'BOZCAADA_plan.jpg' },
+    area: 166,
+    model: "VP 537",
+    short_desc: "147 + 19 m2 veranda tek katlı prefabrik konut",
+    classification: "Single storey prefabricated house",
+    description: "If you plan to go outside to eat, do not forget that you have a wonderful garden."
+  },
+  {
+    name: "KAŞ",
+    images: { main: 'KAŞ.jpg', sub: 'KAŞ_sub.jpg', plan: 'KAŞ_plan.jpg' },
+    area: 82,
+    model: "VP 711",
+    short_desc: "76 + 6 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "We thought everything at your home to enjoy life.",
+    floors: 2
+  },
+  {
+    name: "ILICA",
+    images: { main: 'ILICA.jpg', sub: 'ILICA_sub.jpg', plan: 'ILICA_plan.jpg' },
+    area: 92,
+    model: "VP 712",
+    short_desc: "82 + 10 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "We  gathered  happiness  under the  same  roof for  you  and  your beloved ones.",
+    floors: 2
+  },
+  {
+    name: "ALTINOLUK",
+    images: { main: "ALTINOLUK.jpg", sub: "ALTINOLUK_sub.jpg", plan: "ALTINOLUK_plan.jpg" },
+    area: 100,
+    model: "VP 713",
+    short_desc: "84 + 16 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "Have a laugh, have fun and share the happiness. All good things"
+  },
+  {
+    name: "AKÇAY",
+    images: { main: 'AKÇAY.jpg', sub: 'AKÇAY_sub.jpg', plan: 'AKÇAY_plan.jpg' },
+    area: 100,
+    model: "VP 714",
+    short_desc: "90 + 10 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "The most beautiful things that warm your home are your laughs and unforgettable memories you shared",
+    floors: 2
+  },
+  {
+    name: "AMASRA",
+    images: { main: 'AMASRA.jpg', sub: 'AMASRA_sub.jpg', plan: 'AMASRA_plan.jpg' },
+    area: 105,
+    model: "VP 715",
+    short_desc: "95 + 10 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "Your home is ready whereever you want to be. It is your choice. Maybe a wind coming from see greets you or you start the day with the amazing smell of pine trees.",
+    floors: 2
+  },
+  {
+    name: "URLA",
+    images: { main: 'URLA.jpg', sub: 'URLA_sub.jpg', plan: 'URLA_plan.jpg' },
+    area: 114,
+    model: "VP 716",
+    short_desc: "98 + 16 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "You find  peace  and  coziness  at  your  home,  you  will  be  part  of happiness each day.",
+    floors: 2
+  },
+  {
+    name: "KALKAN",
+    images: { main: 'KALKAN.jpg', sub: 'KALKAN_sub.jpg', plan: 'KALKAN_plan.jpg' },
+    area: 118,
+    model: "VP 717",
+    short_desc: "102 + 16 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "Imagine you wake up to an unique morning with birds’ songs. It is what life is.",
+    floors: 2
+  },
+  {
+    name: "GÜMÜŞLÜK",
+    images: { main: 'GÜMÜŞLÜK.jpg', sub: 'GÜMÜŞLÜK_sub.jpg', plan: 'GÜMÜŞLÜK_plan.jpg' },
+    area: 122,
+    model: "VP 718",
+    short_desc: "98 + 21 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "Those who want to realize their dreams know that details matter.",
+    floors: 2
+  },
+  {
+    name: "YALIKAVAK",
+    images: { main: "YALIKAVAK.jpg", sub: "YALIKAVAK_sub.jpg", plan: "YALIKAVAK_plan.jpg" },
+    area: 13,
+    model: "VP 719",
+    short_desc: "110 + 21 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "It is not only the sun scattering through curtain that lights your home... it is also the smiles of your beloved ones.",
+    floors: 2
+  },
+  {
+    name: "MİLAS",
+    images: { main: 'MİLAS.jpg', sub: 'MİLAS_sub.jpg', plan: 'MİLAS_plan.jpg' },
+    area: 134,
+    model: "VP 720",
+    short_desc: "124 + 10 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "Take a deep breath, go on a journey in the heart of nature between untouched beauties.",
+    floors: 2
+  },
+  {
+    name: "BORNOVA",
+    images: { main: 'BORNOVA.jpg', sub: 'BORNOVA_sub.jpg', plan: 'BORNOVA_plan.jpg' },
+    area: 142,
+    model: "VP 721",
+    short_desc: "128 + 14 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "For us, every moment you live is unique. We considered everything to enjoy these moments.",
+    floors: 2
+  },
+  {
+    name: "DİKİLİ",
+    images: { main: 'DİKİLİ.jpg', sub: 'DİKİLİ_sub.jpg', plan: 'DİKİLİ_plan.jpg' },
+    area: 149,
+    model: "VP 722",
+    short_desc: "116 + 33 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "Your new motto will be silence and peace. At your new home, in the heart of nature you will go on fairytale like journey and find yourself in a new world.",
+    floors: 2
+  },
+  {
+    name: "CUNDA",
+    images: { main: 'CUNDA.jpg', sub: 'CUNDA_sub.jpg', plan: 'CUNDA_plan.jpg' },
+    area: 150,
+    model: "VP 723",
+    short_desc: "132 + 18 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "We thought of everything that creates a value for your life. It has only been left to you to live them.",
+    floors: 2
+  },
+  {
+    name: "ERDEK",
+    images: { main: 'ERDEK.jpg', sub: 'ERDEK_sub.jpg', plan: 'ERDEK_plan.jpg' },
+    area: 155,
+    model: "VP 724",
+    short_desc: "139 + 16 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "With large, practical areas and aesthetic architecture, everyone’s place is ready.",
+    floors: 2
+  },
+  {
+    name: "HALİKARNAS",
+    images: { main: "HALİKARNAS.jpg", sub: "HALİKARNAS_sub.jpg", plan: "HALİKARNAS_plan.jpg" },
+    area: 15,
+    model: "VP 725",
+    short_desc: "132 + 26 m2 veranda iki katlı prefabrik konut",
+    classification: "Double storey prefabricated house",
+    description: "Smile, the most beautiful decoration of your home is the moments in which you are with beloved ones and have fun with them.",
+    floors: 2
+  }
+]
