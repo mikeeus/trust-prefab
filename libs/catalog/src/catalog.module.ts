@@ -10,7 +10,7 @@ import { HouseDetailComponent } from './house-detail/house-detail.component';
 
 const routes: Routes = [
   { path: '', component: CatalogComponent },
-  { path: '/:model', component: HouseDetailComponent },
+  { path: ':model', component: HouseDetailComponent },
 ];
 
 @NgModule({

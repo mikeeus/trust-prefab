@@ -86,4 +86,4 @@ const houses = [
     classification: "Single storey prefabricated house",
     description: "Life’s biggest prize is waking up to a brand new morning in a place you dream of."
   }
-]
+];

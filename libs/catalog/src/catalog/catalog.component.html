@@ -1,6 +1,7 @@
 <div class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around">
   <mat-card fxFlex.xs="96" fxFlex.sm="46" fxFlex.md="31" fxFlex.gt-md="23"
     *ngFor="let house of houses">
+    <a routerLink="/catalog/{{house.name}}" class="link"></a>
     <mat-card-header>
       <!-- <div mat-card-avatar class="example-header-image"></div> -->
       <mat-card-title>{{ house.name }}</mat-card-title>

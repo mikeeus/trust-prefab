@@ -1,6 +1,14 @@
 @import 'variables.scss';
 
 mat-card{
+  a.link{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
   cursor: pointer;
   @include xs {
     margin: 2%;
