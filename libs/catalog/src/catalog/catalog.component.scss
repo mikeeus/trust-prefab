@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+mat-card{
+  cursor: pointer;
+  @include xs {
+    margin: 2%;
+  }
+
+  @include sm {
+    margin: 2%;
+  }
+
+  @include gt-sm {
+    margin: 1%;
+  }
+  mat-card-subtitle{
+    font-size: 12px;
+  }
+  mat-card-content{
+    font-size: 14px;
+  }
+}
