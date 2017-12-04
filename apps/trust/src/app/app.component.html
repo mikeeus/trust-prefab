@@ -1,4 +1,17 @@
-<trust-header></trust-header>
-<div class="container mat-typography" fxFill>
-  <router-outlet></router-outlet>
-</div>
+<mat-sidenav-container class="container" fxFill>
+  <mat-sidenav #sidenav class="sidenav"
+    [fixedInViewport]="media.isActive('gt-xs')"
+    [mode]="media.isActive('xs') ? 'over' : 'side'">
+    Catalog filters
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <trust-header></trust-header>
+
+    <button type="button" mat-button (click)="sidenav.toggle()">
+      Open sidenav
+    </button>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

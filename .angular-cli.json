@@ -82,7 +82,7 @@
         "lib"
       ]
     },
-    "styleExt": "sass",
+    "styleExt": "scss",
     "component": {}
   }
 }
