@@ -4,13 +4,13 @@
     <a routerLink="/catalog/{{house.name}}" class="link"></a>
     <mat-card-header>
       <!-- <div mat-card-avatar class="example-header-image"></div> -->
-      <mat-card-title fxLayout="row" fxLayoutAlign="center space-between">
-        <div fxFlex>
+      <mat-card-title fxLayout="row" fxLayoutAlign="space-between center">
+        <div>
           {{ house.name }} <small>{{ house.model }}</small>
         </div>
         <div class="area">{{ house.area }} m<sup>2</sup></div>
       </mat-card-title>
-      <mat-card-subtitle>{{ house.classification }}</mat-card-subtitle>
+      <mat-card-subtitle fxLayout="row" fxLayoutAlign="start center">{{ house.classification }}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="assets/images/houses/{{ house.images.main }}" alt="Photo of the {{ house.name }} house">
     <!-- <mat-card-content>

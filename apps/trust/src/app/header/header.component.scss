@@ -1,5 +1,8 @@
 @import 'variables.scss';
 
 mat-toolbar{
-  @include shadow-a1;
+  margin-bottom: 2px;
+  background: white;
+  -webkit-box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.3);
 }
