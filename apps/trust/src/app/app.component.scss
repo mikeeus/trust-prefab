@@ -3,3 +3,11 @@
 .container{
   box-sizing: border-box;
 }
+
+mat-sidenav{
+  width: 300px;
+  @include shadow-a1;
+}
+mat-sidenav-content{
+  min-height: 100vh;
+}

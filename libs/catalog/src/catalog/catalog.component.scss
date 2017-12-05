@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
 mat-card{
+  padding-bottom: 0;
   a.link{
     position: absolute;
     z-index: 1;
@@ -26,5 +27,11 @@ mat-card{
   }
   mat-card-content{
     font-size: 14px;
+  }
+  .mat-card-header > div{
+    width: 100%;
+  }
+  .mat-card-image{
+    margin: 0 -24px -6px -24px;
   }
 }

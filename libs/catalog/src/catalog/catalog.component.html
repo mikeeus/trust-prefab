@@ -1,18 +1,22 @@
 <div class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around">
-  <mat-card fxFlex.xs="96" fxFlex.sm="46" fxFlex.md="31" fxFlex.gt-md="23"
+  <mat-card fxFlex.xs="96" fxFlex.sm="96" fxFlex.md="46" fxFlex.gt-md="31"
     *ngFor="let house of houses">
     <a routerLink="/catalog/{{house.name}}" class="link"></a>
     <mat-card-header>
       <!-- <div mat-card-avatar class="example-header-image"></div> -->
-      <mat-card-title>{{ house.name }}</mat-card-title>
+      <mat-card-title fxLayout="row" fxLayoutAlign="center space-between">
+        <div fxFlex>
+          {{ house.name }} <small>{{ house.model }}</small>
+        </div>
+        <div class="area">{{ house.area }} m<sup>2</sup></div>
+      </mat-card-title>
       <mat-card-subtitle>{{ house.classification }}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="assets/images/houses/{{ house.images.main }}" alt="Photo of the {{ house.name }} house">
-    <mat-card-content>
-      <p>
-        {{ house.description }}
-      </p>
-    </mat-card-content>
+    <!-- <mat-card-content>
+      <div fxLayout="row">
+      </div>
+    </mat-card-content> -->
     <!-- <mat-card-actions>
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>
