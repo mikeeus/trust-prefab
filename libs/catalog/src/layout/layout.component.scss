@@ -9,4 +9,14 @@
   left: 0;
   z-index: 9999;
   @include shadow-a1;
+  mat-icon{
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    color: $grey7;
+    cursor: pointer;
+    &:hover{
+      border-color: $main-color;
+      color: $main-color;
+    }
+  }
 }

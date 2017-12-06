@@ -1,16 +1,6 @@
 @import 'variables.scss';
 
-mat-card{
-  padding-bottom: 0;
-  a.link{
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  cursor: pointer;
+.card{
   @include xs {
     margin: 2%;
   }
@@ -21,17 +11,5 @@ mat-card{
 
   @include gt-sm {
     margin: 1%;
-  }
-  mat-card-subtitle{
-    font-size: 12px;
-  }
-  mat-card-content{
-    font-size: 14px;
-  }
-  .mat-card-header > div{
-    width: 100%;
-  }
-  .mat-card-image{
-    margin: 0 -24px -6px -24px;
   }
 }

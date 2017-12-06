@@ -1,0 +1,53 @@
+@import 'variables.scss';
+
+.container{
+  @media (max-width: 400px) {
+    width: 50%;
+  }
+  @include xs {
+    width: 100%;
+  }
+  @include sm {
+    width: 50%;
+  }
+  @include md {
+    width: 33%;
+  }
+  @include lg {
+    width: 25%;
+  }
+  .image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .info{
+    height: 56;
+  }
+}
+
+mat-card{
+  display: inline-block;
+  padding-bottom: 0;
+  a.link{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  cursor: pointer;
+  mat-card-subtitle{
+    font-size: 12px;
+  }
+  mat-card-content{
+    font-size: 14px;
+  }
+  .mat-card-header > div{
+    width: 100%;
+  }
+  .mat-card-image{
+    margin: 0 -24px -6px -24px;
+  }
+}

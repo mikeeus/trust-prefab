@@ -3,29 +3,17 @@
     [fixedInViewport]="media.isActive('xs')"
     [mode]="media.isActive('xs') ? 'over' : 'side'"
     [opened]="media.isActive('gt-xs') ? true : false">
-    <mat-list>
-      <h3 matSubheader>Model Name</h3>
-      <mat-list-item><input type="text" placeholder="Search model name"></mat-list-item>
-      <mat-divider></mat-divider>
-
-      <h3 matSubheader>Area</h3>
-      <mat-list-item>Select area</mat-list-item>
-      <mat-divider></mat-divider>
-
-      <h3 matSubheader>Floors</h3>
-      <md-selection-list #floors>
-        <md-list-option>1</md-list-option>
-        <md-list-option>2</md-list-option>
-      </md-selection-list>
-    </mat-list>
+    <ng-content select="[sidenav]"></ng-content>
   </mat-sidenav>
   <mat-sidenav-content>
-    <router-outlet></router-outlet>
+    <ng-content select="[content]"></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
 <div class="bottom-push"></div>
 <mat-toolbar class="mobile-toolbar" *ngIf="media.isActive('xs')">
-  <mat-icon (click)="sidenav.toggle()">tune</mat-icon>
-  <mat-icon>arrow_back</mat-icon>
+  <mat-icon fxFlex fxLayout="row" fxLayoutAlign="center center" (click)="sidenav.toggle()">tune</mat-icon>
+  <ng-content select="[mobile-button-1]"></ng-content>
+  <ng-content select="[mobile-button-2]"></ng-content>
+  <ng-content select="[mobile-button-3]"></ng-content>
 </mat-toolbar>

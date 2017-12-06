@@ -1,0 +1,20 @@
+<!-- <div class="container" fxLayout="column">
+  <a fxFlex class="image" fxFlex
+    [ngStyle]="{ 'background-image': 'url(assets/images/houses/' + house.images.main + ')'}">
+  </a>
+  <div class="info">
+    {{ house.name }} <small>{{ house.model }}</small>
+  </div>
+</div> -->
+
+<mat-card>
+  <a routerLink="/catalog/{{house.name}}" class="link"></a>
+  <mat-card-header>
+    <mat-card-title fxLayout="row" fxLayoutAlign="space-between center">
+      <div>{{ house.name }} <small>{{ house.model }}</small></div>
+      <div class="area">{{ house.area }} m<sup>2</sup></div>
+    </mat-card-title>
+    <mat-card-subtitle fxLayout="row" fxLayoutAlign="start center">{{ house.classification }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="assets/images/houses/{{ house.images.main }}" alt="Photo of the {{ house.name }} house">
+</mat-card>

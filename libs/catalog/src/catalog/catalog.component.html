@@ -1,26 +1,28 @@
-<div class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around"
-  *ngIf="houses | async as houses">
-  <mat-card fxFlex.xs="96" fxFlex.sm="96" fxFlex.md="46" fxFlex.gt-md="31"
-    *ngFor="let house of houses">
-    <a routerLink="/catalog/{{house.name}}" class="link"></a>
-    <mat-card-header>
-      <!-- <div mat-card-avatar class="example-header-image"></div> -->
-      <mat-card-title fxLayout="row" fxLayoutAlign="space-between center">
-        <div>
-          {{ house.name }} <small>{{ house.model }}</small>
-        </div>
-        <div class="area">{{ house.area }} m<sup>2</sup></div>
-      </mat-card-title>
-      <mat-card-subtitle fxLayout="row" fxLayoutAlign="start center">{{ house.classification }}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="assets/images/houses/{{ house.images.main }}" alt="Photo of the {{ house.name }} house">
-    <!-- <mat-card-content>
-      <div fxLayout="row">
-      </div>
-    </mat-card-content> -->
-    <!-- <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions> -->
-  </mat-card>
-</div>
+<trust-catalog-layout>
+  <mat-list sidenav>
+    <h1>Filter House Models</h1>
+    <h3 matSubheader>Model Name</h3>
+    <mat-list-item><input type="text" placeholder="Search model name"></mat-list-item>
+    <mat-divider></mat-divider>
+
+    <h3 matSubheader>Area</h3>
+    <mat-list-item>Select area</mat-list-item>
+    <mat-divider></mat-divider>
+
+    <h3 matSubheader>Floors</h3>
+    <mat-selection-list #floors>
+      <mat-list-option>1</mat-list-option>
+      <mat-list-option>2</mat-list-option>
+    </mat-selection-list>
+  </mat-list>
+
+  <div content class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around"
+    *ngIf="houses | async as houses">
+    <div class="card" fxFlex.xs="96" fxFlex.sm="96" fxFlex.md="46" fxFlex.gt-md="31"
+      *ngFor="let house of houses">
+      <catalog-house-card [house]="house"></catalog-house-card>
+    </div>
+  </div>
+
+  <mat-icon mobile-button-1 fxFlex fxLayout="row" fxLayoutAlign="center center">arrow_back</mat-icon>
+</trust-catalog-layout>
