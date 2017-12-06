@@ -1,16 +1,31 @@
 <mat-sidenav-container class="container">
-    <mat-sidenav #sidenav class="sidenav"
-      [fixedInViewport]="media.isActive('xs')"
-      [mode]="media.isActive('xs') ? 'over' : 'side'"
-      [opened]="media.isActive('gt-xs') ? true : false">
-      Catalog filters
-    </mat-sidenav>
-    <mat-sidenav-content>
+  <mat-sidenav #sidenav class="sidenav"
+    [fixedInViewport]="media.isActive('xs')"
+    [mode]="media.isActive('xs') ? 'over' : 'side'"
+    [opened]="media.isActive('gt-xs') ? true : false">
+    <mat-list>
+      <h3 matSubheader>Model Name</h3>
+      <mat-list-item><input type="text" placeholder="Search model name"></mat-list-item>
+      <mat-divider></mat-divider>
 
-      <button type="button" mat-button (click)="sidenav.toggle()" *ngIf="">
-        Open sidenav
-      </button>
+      <h3 matSubheader>Area</h3>
+      <mat-list-item>Select area</mat-list-item>
+      <mat-divider></mat-divider>
 
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+      <h3 matSubheader>Floors</h3>
+      <md-selection-list #floors>
+        <md-list-option>1</md-list-option>
+        <md-list-option>2</md-list-option>
+      </md-selection-list>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<div class="bottom-push"></div>
+<mat-toolbar class="mobile-toolbar" *ngIf="media.isActive('xs')">
+  <mat-icon (click)="sidenav.toggle()">tune</mat-icon>
+  <mat-icon>arrow_back</mat-icon>
+</mat-toolbar>

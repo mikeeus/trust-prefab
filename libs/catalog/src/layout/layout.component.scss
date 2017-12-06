@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+.bottom-push{
+  height: 56px;
+}
+.mobile-toolbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  @include shadow-a1;
+}
