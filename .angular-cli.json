@@ -20,7 +20,8 @@
       "testTsconfig": "../../../tsconfig.spec.json",
       "prefix": "trust",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../../../node_modules/material-design-icons/iconfont/material-icons.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -50,6 +51,12 @@
           "../../../variables.scss"
         ]
       }
+    },
+    {
+      "name": "models",
+      "root": "libs/models/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     }
   ],
   "e2e": {
