@@ -1,3 +1,4 @@
+import { createSelector } from 'reselect';
 import { ActionReducer, ActionReducerMap, combineReducers } from '@ngrx/store';
 import { routerReducer, RouterReducerState } from '@ngrx/router-store';
 import { environment } from '../../environments/environment';
@@ -22,3 +23,11 @@ export function reducer(state: any, action: any) {
     return developmentReducer(state, action);
   }
 }
+
+// // ************************************
+// // House State Functions
+// // ************************************
+export const getHouseState = (state: State) => state.houses;
+
+export const getHouses = createSelector(getHouseState, housesReducer.getHouses);
+export const getHouse = (id: string) => createSelector(getHouseState, (state: housesReducer.State) => state.entities[id]);
