@@ -1,4 +1,5 @@
-<div class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around">
+<div class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around"
+  *ngIf="houses | async as houses">
   <mat-card fxFlex.xs="96" fxFlex.sm="96" fxFlex.md="46" fxFlex.gt-md="31"
     *ngFor="let house of houses">
     <a routerLink="/catalog/{{house.name}}" class="link"></a>

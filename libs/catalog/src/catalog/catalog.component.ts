@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ObservableMedia } from '@angular/flex-layout';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'trust-catalog',
@@ -14,6 +15,6 @@ export class CatalogComponent implements OnInit {
   constructor(private media: ObservableMedia, private store: Store<any>) {}
 
   ngOnInit() {
-    this.houses = this.store.select('houses').map(s => s.data);
+    this.houses = this.store.select('houses').pipe(map(s => s.data));
   }
 }
