@@ -1,5 +1,8 @@
 @import 'variables.scss';
 
+trust-catalog-filter{
+  width: 100%;
+}
 .card{
   @include xs {
     margin: 2%;

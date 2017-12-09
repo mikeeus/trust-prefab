@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {
+  MatAutocompleteModule,
+  MatInputModule,
+  MatFormFieldModule,
   MatToolbarModule,
   MatIconModule,
   MatSidenavModule,
@@ -25,7 +29,12 @@ const routes: Routes = [{ path: '', component: CatalogComponent }, { path: ':mod
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     FlexLayoutModule,
+    MatAutocompleteModule,
+    MatInputModule,
+    MatFormFieldModule,
     MatToolbarModule,
     MatIconModule,
     MatListModule,

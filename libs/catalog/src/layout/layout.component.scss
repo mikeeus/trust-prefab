@@ -3,6 +3,10 @@
 .bottom-push{
   height: 56px;
 }
+.sidenav {
+  z-index: -1 !important;
+  background: transparent;
+}
 .mobile-toolbar{
   position: fixed;
   bottom: 0;

@@ -1,8 +1,10 @@
 <trust-catalog-layout #layout>
-  <trust-catalog-filter sidenav></trust-catalog-filter>
 
   <div content class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around"
-    *ngIf="houses | async as houses">
+  *ngIf="houses | async as houses">
+
+    <trust-catalog-filter></trust-catalog-filter>
+
     <div class="card" fxFlex.xs="96" fxFlex.sm="96" fxFlex.md="46" fxFlex.gt-md="31"
       *ngFor="let house of houses">
       <catalog-house-card [house]="house"></catalog-house-card>
