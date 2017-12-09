@@ -135,3 +135,12 @@ $xl_min: 1920px; $xl_max: 5000px;
     @content;
   }
 }
+
+// Effects
+@mixin blur($radius) {
+  -moz-filter: blur($radius);
+  -ms-filter: blur($radius);
+  -webkit-filter: blur($radius);
+  -o-filter: blur($radius);
+  filter: blur($radius);
+}
