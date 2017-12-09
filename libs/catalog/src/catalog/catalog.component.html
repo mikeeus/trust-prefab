@@ -1,7 +1,6 @@
 <trust-catalog-layout #layout>
-
-  <div content class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around"
-  *ngIf="houses | async as houses">
+  <div content class="content" *ngIf="houses | async as houses"
+    fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around">
 
     <trust-catalog-filter></trust-catalog-filter>
 
@@ -10,9 +9,4 @@
       <catalog-house-card [house]="house"></catalog-house-card>
     </div>
   </div>
-
-  <ng-container mobile-toolbar-buttons>
-    <mat-icon fxFlex fxLayout="row" fxLayoutAlign="center center" (click)="layout.toggleSidenav()">tune</mat-icon>
-    <mat-icon mobile-button-1 fxFlex fxLayout="row" fxLayoutAlign="center center">arrow_back</mat-icon>
-  </ng-container>
 </trust-catalog-layout>

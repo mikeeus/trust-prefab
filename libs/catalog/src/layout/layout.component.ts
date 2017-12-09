@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ObservableMedia } from '@angular/flex-layout';
 
 @Component({
@@ -8,13 +8,7 @@ import { ObservableMedia } from '@angular/flex-layout';
   encapsulation: ViewEncapsulation.None
 })
 export class LayoutComponent implements OnInit {
-  @ViewChild('sidenav') sidenav;
-
   constructor(private media: ObservableMedia) {}
 
   ngOnInit() {}
-
-  toggleSidenav() {
-    this.sidenav.toggle();
-  }
 }

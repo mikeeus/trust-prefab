@@ -6,7 +6,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   MatAutocompleteModule,
   MatInputModule,
-  MatFormFieldModule,
   MatToolbarModule,
   MatIconModule,
   MatSidenavModule,
@@ -34,7 +33,6 @@ const routes: Routes = [{ path: '', component: CatalogComponent }, { path: ':mod
     FlexLayoutModule,
     MatAutocompleteModule,
     MatInputModule,
-    MatFormFieldModule,
     MatToolbarModule,
     MatIconModule,
     MatListModule,

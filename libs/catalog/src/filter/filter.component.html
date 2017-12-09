@@ -1,35 +1,9 @@
-  <input type="text" placeholder="Search house models" aria-label="Search house models"
-    matInput [formControl]="myControl" [matAutocomplete]="auto">
-  <mat-autocomplete #auto="matAutocomplete">
-    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-      <ng-container *ngIf="option.split(' | ') as o">
-        {{ o[0] }} <div fxFlex></div> {{ o[1] }}
-      </ng-container>
-    </mat-option>
-  </mat-autocomplete>
-
-<!-- <mat-list>
-  <h2 fxLayoutAlign="center center">
-    <mat-icon>tune</mat-icon> Filter
-  </h2>
-  <h3 matSubheader>Model Name</h3>
-  <mat-list-item><input type="text" placeholder="Search model name"></mat-list-item>
-  <mat-divider></mat-divider>
-
-  <h3 matSubheader>Area</h3>
-  <mat-selection-list #floors>
-    <mat-list-option>
-      <span>40 - 75 m<sup>2</sup></span>
-    </mat-list-option>
-    <mat-list-option>
-      <span>76 - 100 m<sup>2</sup></span>
-    </mat-list-option>
-  </mat-selection-list>
-  <mat-divider></mat-divider>
-
-  <h3 matSubheader>Floors</h3>
-  <mat-selection-list #floors>
-    <mat-list-option>1</mat-list-option>
-    <mat-list-option>2</mat-list-option>
-  </mat-selection-list>
-</mat-list> -->
+<input type="text" placeholder="Search house models" aria-label="Search house models"
+  matInput [formControl]="myControl" [matAutocomplete]="auto">
+<mat-autocomplete #auto="matAutocomplete" class="catalog-filter">
+  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+    <ng-container *ngIf="option.split(' | ') as o">
+      <a routerLink="/catalog/{{ o[0] }}">{{ o[0] }} <div fxFlex></div> {{ o[1] }}</a>
+    </ng-container>
+  </mat-option>
+</mat-autocomplete>

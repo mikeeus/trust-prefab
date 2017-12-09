@@ -1,16 +1,13 @@
 import { createSelector } from 'reselect';
 import { ActionReducer, ActionReducerMap, combineReducers } from '@ngrx/store';
-import { routerReducer, RouterReducerState } from '@ngrx/router-store';
 import { environment } from '../../environments/environment';
 import * as housesReducer from './houses/house.reducer';
 
 export interface State {
   houses: housesReducer.State;
-  router: RouterReducerState;
 }
 export const reducers: ActionReducerMap<State> = {
-  houses: housesReducer.reducer,
-  router: routerReducer
+  houses: housesReducer.reducer
 };
 
 export const developmentReducer: ActionReducer<State> = combineReducers(reducers);

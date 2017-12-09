@@ -41,3 +41,17 @@ html, body{
 .mat-card-header-text{
   width: 100%;
 }
+
+.catalog-filter {
+  .mat-option-text {
+    width: 100%;
+    a {
+      color: $grey7;
+      width: 100%;
+      text-decoration: none;
+      &:hover, &:active {
+        color: $main-color;
+      }
+    }
+  }
+}
