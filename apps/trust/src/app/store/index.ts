@@ -30,4 +30,5 @@ export function reducer(state: any, action: any) {
 export const getHouseState = (state: State) => state.houses;
 
 export const getHouses = createSelector(getHouseState, housesReducer.getHouses);
-export const getHouse = (id: string) => createSelector(getHouseState, (state: housesReducer.State) => state.entities[id]);
+export const getHouse = (id: string) =>
+  createSelector(getHouseState, (state: housesReducer.State) => state.entities[id]);

@@ -17,7 +17,7 @@ export function reducer<T>(state = initialState, action: Action): State {
 const initialState: State = {
   ids: ['KEMER', 'ALANYA', 'SİDE', 'BELEK', 'MARMARİS', 'BODRUM', 'FETHİYE', 'KUŞADASI'],
   entities: {
-    'KEMER': {
+    KEMER: {
       name: 'KEMER',
       images: { main: 'KEMER.png', sub: 'KEMER_sub.png', plan: 'KEMER_plan.png' },
       area: 40,
@@ -26,7 +26,7 @@ const initialState: State = {
       classification: 'Single storey prefabricated house',
       description: 'A  garden  where  your  children  are  raised  and  your flowers  are grown is priceless.'
     },
-    'ALANYA': {
+    ALANYA: {
       name: 'ALANYA',
       images: { main: 'ALANYA.png', sub: 'ALANYA_sub.png', plan: 'ALANYA_plan.png' },
       area: 45,
@@ -35,7 +35,7 @@ const initialState: State = {
       classification: 'Single storey prefabricated house',
       description: 'Enjoy the moment when our professional team assembles your building in quick and complete way.'
     },
-    'SİDE': {
+    SİDE: {
       name: 'SİDE',
       images: { main: 'SİDE.png', sub: 'SİDE_sub.png', plan: 'SİDE_plan.png' },
       area: 49,
@@ -44,7 +44,7 @@ const initialState: State = {
       classification: 'Single storey prefabricated house',
       description: 'Live where you want to be; For example, in a garden decorated with wildflowers.'
     },
-    'BELEK': {
+    BELEK: {
       name: 'BELEK',
       images: { main: 'BELEK.png', sub: 'BELEK_sub.png', plan: 'BELEK_plan.png' },
       area: 49,
@@ -53,7 +53,7 @@ const initialState: State = {
       classification: 'Single storey prefabricated house',
       description: 'Living is to share the best moments with your beloved ones under a peaceful roof'
     },
-    'MARMARİS': {
+    MARMARİS: {
       name: 'MARMARİS',
       images: { main: 'MARMARİS.png', sub: 'MARMARİS_sub.png', plan: 'MARMARİS_plan.png' },
       area: 53,
@@ -62,7 +62,7 @@ const initialState: State = {
       classification: 'Single storey prefabricated house',
       description: 'Starting a new day with the smell of spring flowers... It is what quality live is all about.'
     },
-    'BODRUM': {
+    BODRUM: {
       name: 'BODRUM',
       images: { main: 'BODRUM.png', sub: 'BODRUM_sub.png', plan: 'BODRUM_plan.png' },
       area: 62,
@@ -71,7 +71,7 @@ const initialState: State = {
       classification: 'Single storey prefabricated house',
       description: 'Life is the sum of a home surrounding you and the moments you enjoy in your lifetime.'
     },
-    'FETHİYE': {
+    FETHİYE: {
       name: 'FETHİYE',
       images: { main: 'FETHİYE.png', sub: 'FETHİYE_sub.png', plan: 'FETHİYE_plan.png' },
       area: 68,
@@ -81,7 +81,7 @@ const initialState: State = {
       description:
         'We took inspiration from nature’s beauties and designed every detail of your home considering your wishes.'
     },
-    'KUŞADASI': {
+    KUŞADASI: {
       name: 'KUŞADASI',
       images: { main: 'KUŞADASI.png', sub: 'KUŞADASI_sub.png', plan: 'KUŞADASI_plan.png' },
       area: 73,
