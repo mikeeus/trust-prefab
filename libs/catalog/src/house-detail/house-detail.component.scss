@@ -3,8 +3,12 @@
 .container{
   max-width: 1120px;
   margin: auto;
+  // @include gt-xs {
+  //   padding-top: 30px;
+  // }
   .splash{
     position: relative;
+    overflow: hidden;
     @include shadow-a1;
     .blurred, .image {
       z-index: -1;
@@ -21,7 +25,72 @@
       background-repeat: no-repeat;
     }
     .blurred{
-      @include blur(10px)
+      background-position: center center;
+      @include blur(20px)
+    }
+  }
+  .content{
+    background: white;
+    @include shadow-a1;
+    #info{
+      @include xs {
+        padding: 50px 30px;
+      }
+      @include gt-xs {
+        padding: 50px 50px;
+      }
+      h1{
+        font-weight: 900;
+        color: $main-color;
+        small{
+          font-weight: 300;
+        }
+      }
+      .classification {
+        font-weight: 300;
+      }
+      .desc {
+        font-weight: bold;
+      }
+      .area {
+        font-weight: 900;
+      }
+      .contact{
+        // padding: 30px;
+        button{
+          padding: 5px 20px;
+          background: $main-color;
+          color: white;
+          font-weight: bold;
+        }
+        button, .mat-button-ripple{
+          border-radius: 25px;
+        }
+      }
+    }
+    #floorplans{
+      h2{
+        color: $main-color;
+        margin: 30px;
+      }
+      .floorplan{
+        height: 350px;
+        padding: 30px;
+        margin: 15px 0;
+        margin-bottom: 75px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @include gt-xs {
+          display: inline-block;
+          width: 40%;
+        }
+      }
+    }
+    .sub-image{
+      height: 300px;
+      background-size: cover;
+      background-position: center center;
     }
   }
 }

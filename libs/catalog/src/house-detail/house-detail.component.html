@@ -4,10 +4,29 @@
     </div>
     <div class="blurred" [ngStyle]="{ 'background-image': house.images.main | imageUrl:'houses' }"></div>
   </div>
-  <div class="info" fxFlex="300px">
-    {{ house.classification }}
+  <div class="content" fxLayout="column">
+
+    <section id="info">
+      <h1>{{ house.name }} <small>{{ house.model }}</small></h1>
+      <p class="classification">{{ house.classification }}</p>
+      <blockquote class="desc">{{ house.description }}</blockquote>
+      <p class="area">{{ house.area }} m<sup>2</sup></p>
+
+      <div class="contact">
+        <button mat-button>Request Information</button>
+      </div>
+    </section>
+
+    <section id="floorplans">
+      <h2>Floor Plans</h2>
+      <div class="floorplan" *ngFor="let floorplan of house.floorplans"
+        [ngStyle]="{ 'background-image': floorplan | imageUrl:'floorplans' }">
+      </div>
+    </section>
+    <!-- <section fxFlex="300px" fxLayout.gt-xs="row" fxLayoutAlign="end center">
+      <div class="sub-image"
+        [ngStyle]="{ 'background-image': house.images.sub | imageUrl:'houses' }">
+      </div>
+    </section> -->
   </div>
-  <div class="floorplan"></div>
-  <div class="sub-image" [ngStyle]="{ 'background-image': house.images.main | imageUrl:'houses' }"></div>
-  {{ house | json }}
 </div>
