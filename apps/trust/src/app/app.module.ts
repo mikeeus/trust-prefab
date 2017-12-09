@@ -12,6 +12,7 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { reducers } from './store';
 
+import { ScrollService } from './scroll.service';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
 import { HeaderComponent } from './header/header.component';
@@ -33,6 +34,7 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule
   ],
   declarations: [AppComponent, HeaderComponent, FooterComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [ScrollService]
 })
 export class AppModule {}
