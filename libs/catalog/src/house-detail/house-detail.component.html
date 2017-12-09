@@ -1,5 +1,13 @@
-<p>
-  house-detail works!
-</p>
-
-{{ house | async | json }}
+<div class="container" *ngIf="house | async as house" fxLayout="column">
+  <div class="splash" fxFlex.xs="300px" fxFlex.gt-xs="500px">
+    <div class="image" [ngStyle]="{ 'background-image': house.images.main | imageUrl:'houses' }">
+    </div>
+    <div class="blurred" [ngStyle]="{ 'background-image': house.images.main | imageUrl:'houses' }"></div>
+  </div>
+  <div class="info" fxFlex="300px">
+    {{ house.classification }}
+  </div>
+  <div class="floorplan"></div>
+  <div class="sub-image" [ngStyle]="{ 'background-image': house.images.main | imageUrl:'houses' }"></div>
+  {{ house | json }}
+</div>

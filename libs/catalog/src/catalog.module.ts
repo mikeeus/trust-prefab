@@ -11,15 +11,15 @@ import {
   MatListModule
 } from '@angular/material';
 import { MatGridListModule } from '@angular/material/grid-list';
+
+import { PipesModule } from '@trust/pipes';
+
 import { CatalogComponent } from './catalog/catalog.component';
 import { HouseDetailComponent } from './house-detail/house-detail.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HouseCardComponent } from './house-card/house-card.component';
 
-const routes: Routes = [
-  { path: '', component: CatalogComponent },
-  { path: ':model', component: HouseDetailComponent }
-];
+const routes: Routes = [{ path: '', component: CatalogComponent }, { path: ':model', component: HouseDetailComponent }];
 
 @NgModule({
   imports: [
@@ -33,7 +33,9 @@ const routes: Routes = [
     MatGridListModule,
     MatSidenavModule,
 
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+
+    PipesModule
   ],
   declarations: [CatalogComponent, HouseDetailComponent, LayoutComponent, HouseCardComponent]
 })

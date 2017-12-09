@@ -18,8 +18,6 @@ export class HouseDetailComponent implements OnInit {
   constructor(private store: Store<any>, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.house = this.route.params.pipe(
-      switchMap(params => this.store.select(storeRoot.getHouse(params['model'])))
-    );
+    this.house = this.route.params.pipe(switchMap(params => this.store.select(storeRoot.getHouse(params['model']))));
   }
 }
