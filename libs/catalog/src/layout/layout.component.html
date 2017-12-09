@@ -12,8 +12,5 @@
 
 <div class="bottom-push"></div>
 <mat-toolbar class="mobile-toolbar" *ngIf="media.isActive('xs')">
-  <mat-icon fxFlex fxLayout="row" fxLayoutAlign="center center" (click)="sidenav.toggle()">tune</mat-icon>
-  <ng-content select="[mobile-button-1]"></ng-content>
-  <ng-content select="[mobile-button-2]"></ng-content>
-  <ng-content select="[mobile-button-3]"></ng-content>
+  <ng-content select="[mobile-toolbar-buttons]"></ng-content>
 </mat-toolbar>

@@ -1,4 +1,4 @@
-<trust-catalog-layout>
+<trust-catalog-layout #layout>
   <mat-list sidenav>
     <h1>Filter House Models</h1>
     <h3 matSubheader>Model Name</h3>
@@ -24,5 +24,8 @@
     </div>
   </div>
 
-  <mat-icon mobile-button-1 fxFlex fxLayout="row" fxLayoutAlign="center center">arrow_back</mat-icon>
+  <ng-container mobile-toolbar-buttons>
+    <mat-icon fxFlex fxLayout="row" fxLayoutAlign="center center" (click)="layout.toggleSidenav()">tune</mat-icon>
+    <mat-icon mobile-button-1 fxFlex fxLayout="row" fxLayoutAlign="center center">arrow_back</mat-icon>
+  </ng-container>
 </trust-catalog-layout>
