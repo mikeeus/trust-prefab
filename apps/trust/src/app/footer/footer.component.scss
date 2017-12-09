@@ -5,6 +5,12 @@ mat-toolbar {
   color: white;
   -webkit-box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.3);
+  .logo {
+    font-weight: 900;
+    small {
+      font-weight: 300;
+    }
+  }
   .author {
     font-size: 14px;
     a {
