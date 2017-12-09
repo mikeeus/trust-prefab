@@ -1,17 +1,19 @@
 @import 'variables.scss';
 
-
-form {
-  width: 100%;
-  max-width: 450px;
-  margin: auto;
-  mat-form-field{
-    width: 100%;
-    mat-option{
-      padding: 0 10%;
-    }
+input {
+  width: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: Open Sans, Helvetica, sans-serif;
+  box-sizing: border-box;
+  &:focus {
+    outline: 0 !important;
+    border: 1px solid $main-color;
   }
-
+  @include xs {
+    margin: 10px 5%;
+  }
   @include gt-xs {
     position: fixed;
     left: 15px;

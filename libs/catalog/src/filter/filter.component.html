@@ -1,16 +1,12 @@
-<form>
-  <mat-form-field>
-    <input type="text" placeholder="Search house models" aria-label="Search house models"
-      matInput [formControl]="myControl" [matAutocomplete]="auto">
-    <mat-autocomplete #auto="matAutocomplete">
-      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-        <ng-container *ngIf="option.split(' | ') as o">
-          {{ o[0] }} <div fxFlex></div> {{ o[1] }}
-        </ng-container>
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-</form>
+  <input type="text" placeholder="Search house models" aria-label="Search house models"
+    matInput [formControl]="myControl" [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+      <ng-container *ngIf="option.split(' | ') as o">
+        {{ o[0] }} <div fxFlex></div> {{ o[1] }}
+      </ng-container>
+    </mat-option>
+  </mat-autocomplete>
 
 <!-- <mat-list>
   <h2 fxLayoutAlign="center center">
