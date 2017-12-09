@@ -1,6 +1,6 @@
 @import 'variables.scss';
 
-mat-toolbar{
+mat-toolbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,13 +10,14 @@ mat-toolbar{
   color: $main-color;
   -webkit-box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.3);
-  .logo{
+  .logo {
+    cursor: pointer;
     font-weight: 900;
     small{
       font-weight: 300;
     }
   }
-  .mat-button{
+  .mat-button {
     padding: 10px 15px;
     font-weight: bold;
   }
