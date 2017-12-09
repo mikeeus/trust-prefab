@@ -57,6 +57,12 @@
       "root": "libs/models/src",
       "test": "../../../test.js",
       "appRoot": ""
+    },
+    {
+      "name": "pipes",
+      "root": "libs/pipes/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     }
   ],
   "e2e": {
