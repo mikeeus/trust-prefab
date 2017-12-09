@@ -1,20 +1,5 @@
 <trust-catalog-layout #layout>
-  <mat-list sidenav>
-    <h1>Filter House Models</h1>
-    <h3 matSubheader>Model Name</h3>
-    <mat-list-item><input type="text" placeholder="Search model name"></mat-list-item>
-    <mat-divider></mat-divider>
-
-    <h3 matSubheader>Area</h3>
-    <mat-list-item>Select area</mat-list-item>
-    <mat-divider></mat-divider>
-
-    <h3 matSubheader>Floors</h3>
-    <mat-selection-list #floors>
-      <mat-list-option>1</mat-list-option>
-      <mat-list-option>2</mat-list-option>
-    </mat-selection-list>
-  </mat-list>
+  <trust-catalog-filter sidenav></trust-catalog-filter>
 
   <div content class="content" fxLayout="row" fxLayoutWrap fxLayoutAlign="start space-around"
     *ngIf="houses | async as houses">

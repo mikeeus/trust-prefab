@@ -18,6 +18,7 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { HouseDetailComponent } from './house-detail/house-detail.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HouseCardComponent } from './house-card/house-card.component';
+import { FilterComponent } from './filter/filter.component';
 
 const routes: Routes = [{ path: '', component: CatalogComponent }, { path: ':model', component: HouseDetailComponent }];
 
@@ -37,6 +38,6 @@ const routes: Routes = [{ path: '', component: CatalogComponent }, { path: ':mod
 
     PipesModule
   ],
-  declarations: [CatalogComponent, HouseDetailComponent, LayoutComponent, HouseCardComponent]
+  declarations: [CatalogComponent, HouseDetailComponent, LayoutComponent, HouseCardComponent, FilterComponent]
 })
 export class CatalogModule {}
