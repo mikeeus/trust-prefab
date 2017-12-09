@@ -28,15 +28,12 @@ export class FilterComponent implements OnInit {
         if (!val) {
           return this.options;
         }
-        return this.options.pipe(
-          map(options => this.filter(options, val))
-        );
+        return this.options.pipe(map(options => this.filter(options, val)));
       })
     );
   }
 
   filter(options: string[], val: string): string[] {
-    return options.filter(option =>
-      option.toLowerCase().indexOf(val.toLowerCase()) !== -1);
+    return options.filter(option => option.toLowerCase().indexOf(val.toLowerCase()) !== -1);
   }
 }

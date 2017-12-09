@@ -15,6 +15,7 @@ import { reducers } from './store';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,7 @@ import { HeaderComponent } from './header/header.component';
 
     AppRoutingModule
   ],
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
