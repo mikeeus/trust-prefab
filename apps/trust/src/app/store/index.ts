@@ -33,10 +33,11 @@ export const getHouses = createSelector(getHouseState, housesReducer.getHouses);
 export const getHouse = (id: string) =>
   createSelector(getHouseState, (state: housesReducer.State) => state.entities[id]);
 
-export const getHousebyName = (name: string) => createSelector(getHouseState, (state: housesReducer.State) => state.entities[name]);
-export const getHousebyModel = (model: string) => createSelector(getHouseState,
-  (state: housesReducer.State) => state.entities[state.modelsMap[model]]);
-export const searchHousesByName = (name: string) => createSelector(getHouseState,
-  (state: housesReducer.State) => state.ids.filter(id => id.indexOf(name) !== -1));
-export const searchHousesByModel = (model: string) => createSelector(getHouseState,
-  (state: housesReducer.State) => state.models.filter(id => id.indexOf(name) !== -1));
+export const getHousebyName = (name: string) =>
+  createSelector(getHouseState, (state: housesReducer.State) => state.entities[name]);
+export const getHousebyModel = (model: string) =>
+  createSelector(getHouseState, (state: housesReducer.State) => state.entities[state.modelsMap[model]]);
+export const searchHousesByName = (name: string) =>
+  createSelector(getHouseState, (state: housesReducer.State) => state.ids.filter(id => id.indexOf(name) !== -1));
+export const searchHousesByModel = (model: string) =>
+  createSelector(getHouseState, (state: housesReducer.State) => state.models.filter(id => id.indexOf(name) !== -1));
