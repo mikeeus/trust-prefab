@@ -15,10 +15,19 @@ mat-toolbar {
     font-weight: 900;
     small{
       font-weight: 300;
+      @include xs {
+        display: none;
+      }
     }
   }
   .mat-button {
-    padding: 10px 15px;
+    @include xs {
+      padding: 10px 0;
+      min-width: 70px;
+    }
+    @include gt-xs {
+      padding: 10px 15px;
+    }
     font-weight: bold;
   }
 }
