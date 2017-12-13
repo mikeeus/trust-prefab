@@ -1,16 +1,8 @@
 @import 'variables.scss';
 
-input {
+form{
   width: 90%;
-  padding: 10px;
   box-sizing: border-box;
-  font-size: 15px;
-  font-family: Open Sans, Helvetica, sans-serif;
-  box-sizing: border-box;
-  &:focus {
-    outline: 0 !important;
-    border: 1px solid $main-color;
-  }
   @include xs {
     margin: 10px 5%;
   }
@@ -20,6 +12,16 @@ input {
     z-index: 9999;
     top: 74px;
     width: 270px;
+  }
+  input {
+    padding: 10px;
+    font-size: 15px;
+    font-family: Open Sans, Helvetica, sans-serif;
+    box-sizing: border-box;
+    &:focus {
+      outline: 0 !important;
+      border: 1px solid $main-color;
+    }
   }
 }
 

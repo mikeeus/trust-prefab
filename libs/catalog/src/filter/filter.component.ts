@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 import * as storeRoot from 'apps/trust/src/app/store/index';
 import { Store } from '@ngrx/store';
@@ -14,26 +14,31 @@ import { map, switchMap, filter, startWith } from 'rxjs/operators';
   styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent implements OnInit {
-  myControl: FormControl = new FormControl();
+  filter: FormGroup;
   options: Observable<string[]>;
   filteredOptions: Observable<string[]>;
 
-  constructor(private store: Store<any>) {}
+  constructor(private store: Store<any>, private fb: FormBuilder) {}
 
   ngOnInit() {
+    this.filter = this.fb.group({
+      search: [''],
+      floors: [],
+      area: []
+    });
     this.options = this.store.select(storeRoot.getHouseOptions);
-    this.filteredOptions = this.myControl.valueChanges.pipe(
+    this.filteredOptions = this.filter.valueChanges.pipe(
       startWith(null),
       switchMap(val => {
         if (!val) {
           return this.options;
         }
-        return this.options.pipe(map(options => this.filter(options, val)));
+        return this.options.pipe(map(options => this.filterFunction(options, val)));
       })
     );
   }
 
-  filter(options: string[], val: string): string[] {
-    return options.filter(option => option.toLowerCase().indexOf(val.toLowerCase()) !== -1);
+  filterFunction(options: string[], val: { search: string, floors: number, area: number[] }): string[] {
+    return options.filter(option => option.toLowerCase().indexOf(val.search.toLowerCase()) !== -1);
   }
 }

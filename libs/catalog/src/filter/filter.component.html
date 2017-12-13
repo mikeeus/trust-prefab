@@ -1,9 +1,15 @@
-<input type="text" placeholder="Search house models" aria-label="Search house models"
-  matInput [formControl]="myControl" [matAutocomplete]="auto">
-<mat-autocomplete #auto="matAutocomplete" class="catalog-filter">
-  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-    <ng-container *ngIf="option.split(' | ') as o">
-      <a routerLink="/catalog/{{ o[0] }}">{{ o[0] }} <div fxFlex></div> {{ o[1] }}</a>
-    </ng-container>
-  </mat-option>
-</mat-autocomplete>
+<form [formGroup]="filter" fxLayout="column" fxLayoutGap="15px">
+  <input type="text" placeholder="Search house models"
+    formControlName="search" [matAutocomplete]="auto"
+    aria-label="Search house models" matInput>
+  <mat-autocomplete #auto="matAutocomplete" class="catalog-filter">
+    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+      <ng-container *ngIf="option.split(' | ') as o">
+        <a routerLink="/catalog/{{ o[0] }}">{{ o[0] }} <div fxFlex></div> {{ o[1] }}</a>
+      </ng-container>
+    </mat-option>
+  </mat-autocomplete>
+
+  <p>checkbox for floors</p>
+  <p>Slide for area</p>
+</form>
