@@ -42,6 +42,12 @@
       }
     },
     {
+      "name": "contact",
+      "root": "libs/contact/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "home",
       "root": "libs/home/src",
       "test": "../../../test.js",

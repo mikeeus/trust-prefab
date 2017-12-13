@@ -1,7 +1,7 @@
 import { Injectable, Inject } from '@angular/core';
 import { PlatformLocation } from '@angular/common';
 import { DOCUMENT } from '@angular/platform-browser';
-import {fromEvent} from 'rxjs/observable/fromEvent';
+import { fromEvent } from 'rxjs/observable/fromEvent';
 
 export const topMargin = 16;
 /**
@@ -9,7 +9,6 @@ export const topMargin = 16;
  */
 @Injectable()
 export class ScrollService {
-
   private _topOffset: number | null;
   private _topOfPageElement: Element;
 
@@ -18,7 +17,7 @@ export class ScrollService {
   get topOffset() {
     if (!this._topOffset) {
       const toolbar = this.document.querySelector('.app-toolbar');
-      this._topOffset = (toolbar && toolbar.clientHeight || 0) + topMargin;
+      this._topOffset = ((toolbar && toolbar.clientHeight) || 0) + topMargin;
     }
     return this._topOffset;
   }
@@ -30,11 +29,9 @@ export class ScrollService {
     return this._topOfPageElement;
   }
 
-  constructor(
-      @Inject(DOCUMENT) private document: any,
-      private location: PlatformLocation) {
+  constructor(@Inject(DOCUMENT) private document: any, private location: PlatformLocation) {
     // On resize, the toolbar might change height, so "invalidate" the top offset.
-    fromEvent(window, 'resize').subscribe(() => this._topOffset = null);
+    fromEvent(window, 'resize').subscribe(() => (this._topOffset = null));
   }
 
   /**
@@ -44,9 +41,7 @@ export class ScrollService {
    */
   scroll() {
     const hash = this.getCurrentHash();
-    const element: HTMLElement = hash
-        ? this.document.getElementById(hash)
-        : this.topOfPageElement;
+    const element: HTMLElement = hash ? this.document.getElementById(hash) : this.topOfPageElement;
     this.scrollToElement(element);
   }
 

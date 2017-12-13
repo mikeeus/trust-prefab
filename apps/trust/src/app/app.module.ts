@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   imports: [
@@ -33,7 +34,7 @@ import { FooterComponent } from './footer/footer.component';
 
     AppRoutingModule
   ],
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, AboutComponent],
   bootstrap: [AppComponent],
   providers: [ScrollService]
 })
